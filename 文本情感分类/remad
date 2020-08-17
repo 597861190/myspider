@@ -1,0 +1,10 @@
+#### 文本情感分类
+#####1.准备数据
+- 如何完成基础打Dataset的构建和Dataloader的准备
+    * 注意点:dataloader中的collate_fn的实现
+    * collate_fn(batch):batch中是一个个的getitem的元组
+#####2.每个batch中文本的长度不一致的问题如何解决
+* 长句裁剪
+* 断句填充
+#####3.每个batch中的文本如何转化为数字序列
+* ["词":int]
