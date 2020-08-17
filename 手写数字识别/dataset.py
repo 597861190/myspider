@@ -17,7 +17,7 @@ def mnist_database(train):
     ])
 
     # 1. 准备Mnist数据集
-    return MNIST(root="../data/minist", train=train, download=False, transform=func)
+    return MNIST(root="../data/minist", train=train, download=True, transform=func)
 def get_dataloader(train=True): #train=True返回训练集 False返回测试集
     mnist = mnist_database(train)
     batch_size = conf.train_batch_size if train else conf.test_batch_size
